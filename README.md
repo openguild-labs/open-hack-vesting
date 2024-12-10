@@ -1,4 +1,4 @@
-# OpenHack Vesting Contract
+# OpenHack Vesting Challenge
 
 This challenge involves creating a smart contract for token vesting with configurable schedules. You'll learn about time-based operations, token handling, and access control in Solidity.
 
