@@ -1,6 +1,14 @@
 # 🔒 OpenHack Vesting Challenge 💰
 
-This challenge involves creating a smart contract for token vesting with configurable schedules. You'll learn about time-based operations, token handling, and access control in Solidity.
+OpenGuild Labs makes the repository to introduce OpenHack workshop participants to Solidity and help them familiarize themselves with the language. This challenge involves creating a smart contract for token vesting with configurable schedules. You'll learn about time-based operations, token handling, and access control in Solidity.
+
+## Participant Registration
+
+Add your information to the below list to officially participate in the workshop challenge (This is the first mission of the whole workshop)
+
+| Emoji | Name            | Github Username                                       | Occupations              |
+| ----- | --------------- | ----------------------------------------------------- | ------------------------ |
+|   🎅  | Ippo            | [NTP-996](https://github.com/NTP-996)                 | DevRel                   |
 
 ## 💻 Local development environment setup
 
