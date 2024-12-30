@@ -1,12 +1,13 @@
-const { expect } = require("chai");
-const { ethers } = require("hardhat");
-const { time } = require("@nomicfoundation/hardhat-network-helpers");
+import { expect } from "chai";
+import { ethers } from "hardhat";
+import { time } from "@nomicfoundation/hardhat-network-helpers";
+import { TokenVesting } from "../typechain-types";
 
 describe("TokenVesting", function () {
   let Token;
   let token: any;
   let TokenVesting;
-  let vesting: any;
+  let vesting: TokenVesting;
   let owner: any;
   let beneficiary: any;
   let addr2: any;
@@ -39,7 +40,7 @@ describe("TokenVesting", function () {
 
   describe("Deployment", function () {
     it("Should set the right token", async function () {
-      expect(await vesting.token()).to.equal(await token.getAddress());
+      expect(await vesting.i_token()).to.equal(await token.getAddress());
     });
 
     it("Should set the right owner", async function () {
@@ -108,7 +109,7 @@ describe("TokenVesting", function () {
       await time.increase(60); // Move past start time
       await expect(
         vesting.connect(beneficiary).claimVestedTokens()
-      ).to.be.revertedWith("No tokens to claim");
+      ).to.be.revertedWithCustomError(vesting, "ZeroValue");
     });
 
     it("Should allow claiming after cliff", async function () {
