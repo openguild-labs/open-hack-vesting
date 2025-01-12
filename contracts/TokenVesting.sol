@@ -129,9 +129,6 @@ contract TokenVesting is Ownable(msg.sender), Pausable, ReentrancyGuard {
             revert InvalidVestingDuration();
         }
 
-        // Transfer token
-        _safeTransferFrom(token, msg.sender, address(this), totalAmount);
-
         VestingSchedule memory vestingSchedule = VestingSchedule({
             startTime: startTime,
             cliffDuration: cliffDuration,
@@ -142,6 +139,9 @@ contract TokenVesting is Ownable(msg.sender), Pausable, ReentrancyGuard {
             token: token
         });
         vestingSchedules[beneficiary] = vestingSchedule;
+
+        // Transfer token
+        _safeTransferFrom(token, msg.sender, address(this), totalAmount);
 
         emit VestingScheduleCreated(beneficiary, totalAmount);
     }
