@@ -8,20 +8,23 @@ OpenGuild Labs makes the repository to introduce OpenHack workshop participants 
 
 Add your information to the below list to officially participate in the workshop challenge (This is the first mission of the whole workshop)
 
-| Emoji | Name            | Github Username                                       | Occupations              |
-| ----- | --------------- | ----------------------------------------------------- | ------------------------ |
-|   🎅  | Ippo            | [NTP-996](https://github.com/NTP-996)                 | DevRel                   |
+| Emoji | Name        | Github Username                                   | Occupations |
+| ----- | ----------- | ------------------------------------------------- | ----------- |
+| 🎅    | Ippo        | [NTP-996](https://github.com/NTP-996)             | DevRel      |
+| 🦛    | HarryRiddle | [0xharryriddle](https://github.com/0xharryriddle) | Student     |
 
 ## 💻 Local development environment setup
 
 ### 1. Install Volta (Node.js Version Manager)
 
 #### Windows
+
 1. Download the Windows installer from https://docs.volta.sh/guide/getting-started
 2. Run the installer and follow the prompts
 3. Open a new terminal to activate Volta
 
 #### macOS/Linux
+
 ```bash
 # Install Volta
 curl https://get.volta.sh | bash
@@ -32,6 +35,7 @@ source ~/.zshrc   # for zsh
 ```
 
 ### 2. Install Node.js and npm using Volta
+
 ```bash
 # Install Node.js LTS version
 volta install node
@@ -42,7 +46,6 @@ npm --version
 ```
 
 ## 🚀 Getting Started
-
 
 ```bash
 git clone git@github.com:NTP-996/open-hack-vesting.git
@@ -68,6 +71,7 @@ At the time writing this challenge, Hardhat haven't support deployment on Westen
 ### 🦊 Installing and Setting Up MetaMask
 
 1. 💿 Install Metahttps://remix.polkadot.io/Mask
+
    - Visit the [MetaMask website](https://metamask.io)
    - Click "Download" and add the extension to your browser
    - Create a new wallet by following the setup wizard
@@ -94,35 +98,37 @@ At the time writing this challenge, Hardhat haven't support deployment on Westen
 
 🎯 Access Remix
 
-   - Go to https://remix.polkadot.io
-   - Simply copy/paste your yeild.sol contract
+- Go to https://remix.polkadot.io
+- Simply copy/paste your yeild.sol contract
 
 🔨 Compile the Contract
 
-   - Select the "Solidity Compiler" tab
-   - Choose compiler version (e.g., 0.8.0)
-   - Click "Compile"
+- Select the "Solidity Compiler" tab
+- Choose compiler version (e.g., 0.8.0)
+- Click "Compile"
 
 📤 Deploy the Contract
 
-   - Go to the "Deploy & Run Transactions" tab
-   - Set the environment to "Injected Provider - MetaMask"
-   - Ensure your MetaMask is connected to Asset-Hub Westend
-   - Click "Deploy"
-   - Confirm
+- Go to the "Deploy & Run Transactions" tab
+- Set the environment to "Injected Provider - MetaMask"
+- Ensure your MetaMask is connected to Asset-Hub Westend
+- Click "Deploy"
+- Confirm
 
 ![image](./public/assets/deployed.png)
 
 ---
 
 ### 🙋‍♂️ How to claim the bounty?
- Complete the challenge on your fork repository <br/>
+
+Complete the challenge on your fork repository <br/>
 ⭐ Star Open Guild repository <br/>
 👥 Follow OpenGuild Lab Github <br/>
 💬 Join OpenGuild Discord <br/>
 📝 Submit the proof-of-work (your challenge repository) to OpenGuild Discord <br/>
 
 ---
+
 # 🤝 How to contribute to the community?
 
 To submit a proposal, ideas, or any questions, please submit them here: [OpenGuild Discussion 💭](https://github.com/orgs/openguild-labs/discussions)
